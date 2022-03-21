@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: rvfln
+Version: 0.0.1
+Summary: Package for an implementation of Random Vector Functional Link Network. For the user's convenience the package uses Sklearn's API
+Home-page: UNKNOWN
+Author: Márton Kardos
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
