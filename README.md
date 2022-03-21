@@ -18,7 +18,7 @@ The package contains:
 - a base model, where both X and Y are matrices,
 - a regressor, where X is a matrix and y is a vector
 - a classifier, where X is a matrix and y is an Iterable of labels
-  from rvfln import RVFLNClassifier
+    from rvfln import RVFLNClassifier
 
     model = RVFLNClassifier(n_enhancement = 2000)
     model.fit(X_train, y_train)
