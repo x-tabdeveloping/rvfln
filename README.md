@@ -1,7 +1,7 @@
 # RVFLN
 
 <p>
-A Python implementation of Random Vector Functional Link Networks using the Sklearn API
+A Python implementation of Random Vector Functional Link Networks and Broad Learning Systems using the Sklearn API
 </p>
 
 ## Installation
@@ -15,17 +15,25 @@ A Python implementation of Random Vector Functional Link Networks using the Skle
 Since the API is based on that of sklearn the usage is very similar.
 The package contains:
 
-- a base model, where both X and Y are matrices,
-- a regressor, where X is a matrix and y is a vector
-- a classifier, where X is a matrix and y is an Iterable of labels
+- An rvfln module containing a regressor and a classifier estimator
+- A bls module containing a regressor and a classifier estimator
 
 <br>
 
-    from rvfln import RVFLNClassifier
+### Example:
 
-    model = RVFLNClassifier(n_enhancement = 2000)
-    model.fit(X_train, y_train)
-    model.score(X_test, y_test)
+<br>
+
+    from rvfln.bls import BLSClassifier
+
+    clf = BLSClassifier(
+        n_z = 10,
+        n_z_features = 400,
+        n_h = 2000,
+        alpha = 1
+    ).fit(x_train, y_train)
+
+    print(clf.score(x_test, y_test))
 
 <br>
 
